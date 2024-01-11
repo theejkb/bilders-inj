@@ -1,0 +1,59 @@
+.header {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.55);
+  color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+
+  @media (prefers-color-scheme: dark) {
+    border-color: #222;
+  }
+}
+
+.twitterLogo * {
+  height: 100%;
+  width: auto;
+  transform: scale(1);
+  transition: 0.3s ease-out;
+  fill: #1da1f2;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+.discordLogo * {
+  height: 100%;
+  width: auto;
+  transform: scale(0.9);
+  transition: 0.3s ease-out;
+  fill: #7289da;
+
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.madeWith {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+
+  .elrondLogo {
+    margin: 0px 10px;
+    position: relative;
+    transform: scale(1);
+    transition: 0.3s ease-out;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}
