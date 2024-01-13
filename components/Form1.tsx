@@ -1,18 +1,46 @@
+import { FormName, useSubmitForm } from '../hooks/use-submit-form'
+
 export default function Form1() {
+  const { isSubmitting, handleSubmit } = useSubmitForm(FormName.NEED_SERVICE)
+
   return (
-    <form
-      method='POST'
-      action='https://script.google.com/macros/CA-MARCHE-PAS-WESH/exec'
-    >
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-      <h3>Whether you're a freelancer or a project founder, our DM are open if you want branding that sets you apart from your competitors. </h3>
-      <label>Besoin d’un service ?</label>
-      <input name='Services' type='text' placeholder='Art, développement, community...' required />
-      <label>Décrivez nous votre projet rapidement et votre demande.</label>
-      <input name='Details' type='text' placeholder='Details supplémentaires' required />
-      <input name='Twitter' type='text' placeholder='Votre liens twitter' required />
-      <input name='Discord' type='text' placeholder='Votre ID Discord' required />
-      <button type='submit'>Send</button>
+    <form onSubmit={handleSubmit}>
+      <h3>
+        {
+          "Whether you're a freelancer or a project founder, our DM are open if you want branding that sets you apart from your competitors"
+        }
+      </h3>
+      <label htmlFor="service">Besoin d’un service ?</label>
+      <input
+        name="service"
+        type="text"
+        placeholder="Art, développement, community..."
+        required
+      />
+      <label htmlFor="description">
+        Décrivez nous votre projet rapidement et votre demande.
+      </label>
+      <input
+        name="description"
+        type="text"
+        placeholder="Details supplémentaires"
+        required
+      />
+      <input
+        name="twitter"
+        type="text"
+        placeholder="Votre liens twitter"
+        required
+      />
+      <input
+        name="discord"
+        type="text"
+        placeholder="Votre ID Discord"
+        required
+      />
+      <button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Sending ..." : "Send"}
+      </button>
     </form>
   )
 }
