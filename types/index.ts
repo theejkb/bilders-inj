@@ -9,9 +9,6 @@ export type Case = {
   hint?: string
 }
 
-type Styles = {
-  readonly [key: string]: string
-}
 export interface BaseSectionProps {
-  sectionStyles: Styles
+  title: string
 }
