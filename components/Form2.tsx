@@ -5,43 +5,44 @@ export default function Form2() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="service">Quel services vous proposer ?</label>
+      <label className={'form-title'} htmlFor='service'>What services can you offer?</label>
       <input
-        name="service"
-        type="text"
-        placeholder="Art, développement, community..."
+        name='service'
+        type='text'
+        placeholder='Type of service you can offer'
         required
       />
-      <label htmlFor="mission">
-        Quel mission avez vous déjà effectué dans le web3 et pour quel projet ?{' '}
+      <label htmlFor='mission'>
+        {/*What web3 missions have you already completed and for what projects?{' '}*/}
       </label>
       <input
-        name="mission"
-        type="text"
-        placeholder="Project web3, roles, missions..."
+        name='mission'
+        type='text'
+        placeholder='Web3 missions and projects you have worked for'
         required
       />
-      <label htmlFor="salaire">Quelle salaire demandez vous ?</label>
-      <input
-        name="salaire"
-        type="text"
-        placeholder="Tranche de salaire"
-        required
-      />
-      <input
-        name="twitter"
-        type="text"
-        placeholder="Votre liens twitter"
-        required
-      />
-      <input
-        name="discord"
-        type="text"
-        placeholder="Votre ID Discord"
-        required
-      />
-      <button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Sending ..." : "Send"}
+      <div className={'triple'}>
+        <input
+          name='salaire'
+          type='text'
+          placeholder='Salary'
+          required
+        />
+        <input
+          name='twitter'
+          type='text'
+          placeholder='Twitter handle'
+          required
+        />
+        <input
+          name='discord'
+          type='text'
+          placeholder='Discord ID'
+          required
+        />
+      </div>
+      <button type='submit' disabled={isSubmitting}>
+        {isSubmitting ? 'Sending ...' : 'Send'}
       </button>
     </form>
   )

@@ -4,42 +4,39 @@ export default function Form1() {
   const { isSubmitting, handleSubmit } = useSubmitForm(FormName.NEED_SERVICE)
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h3>
-        {
-          "Whether you're a freelancer or a project founder, our DM are open if you want branding that sets you apart from your competitors"
-        }
-      </h3>
-      <label htmlFor="service">Besoin d’un service ?</label>
+    <form className={'form-1'} onSubmit={handleSubmit}>
+      <label className={'form-title'} htmlFor='service'>Need a service ?</label>
       <input
-        name="service"
-        type="text"
-        placeholder="Art, développement, community..."
+        name='service'
+        type='text'
+        placeholder='Type of service you need'
         required
       />
-      <label htmlFor="description">
-        Décrivez nous votre projet rapidement et votre demande.
+      <label htmlFor='description'>
+        {/*Describe brievly your project*/}
       </label>
       <input
-        name="description"
-        type="text"
-        placeholder="Details supplémentaires"
+        name='description'
+        type='text'
+        placeholder='Describe your project'
         required
       />
-      <input
-        name="twitter"
-        type="text"
-        placeholder="Votre liens twitter"
-        required
-      />
-      <input
-        name="discord"
-        type="text"
-        placeholder="Votre ID Discord"
-        required
-      />
-      <button type="submit" disabled={isSubmitting}>
-        {isSubmitting ? "Sending ..." : "Send"}
+      <div className={'half'}>
+        <input
+          name='twitter'
+          type='text'
+          placeholder='Twitter handle'
+          required
+        />
+        <input
+          name='discord'
+          type='text'
+          placeholder='Discord ID'
+          required
+        />
+      </div>
+      <button type='submit' disabled={isSubmitting}>
+        {isSubmitting ? 'Sending ...' : 'Send'}
       </button>
     </form>
   )

@@ -1,22 +1,84 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 export default function HomeSection() {
+
   return (
     <section className={'home-section'}>
       <div className='links'>
-        <Link href={'/bildercrew'}>ㅤ</Link>
-        <Link href={'/bilderboard'}>ㅤ</Link>
-        <Link href={'/bilderdox'}>ㅤ</Link>
-        <Link href={'/bilderlabs'}>ㅤ</Link>
-        <Link href={'/bilderdising'}>ㅤ</Link>
+
+        <Image
+          src='/home/poto.png'
+          alt='link'
+          layout='fill'
+          objectFit='contain'
+          objectPosition='center'
+          quality={100}
+          priority
+        />
+        <Link href={'/bildercrew'}>
+          <Image
+            className={'bildercrew'}
+            src='/home/bildercrew.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
+        <Link href={'/bilderboard'}>
+          <Image
+            className='bilderboard'
+            src='/home/bilderboard.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
+        <Link href={'/bilderdox'}>
+          <Image
+            className='bilderdox'
+            src='/home/bilderdox.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
+        <Link href={'/bilderlabs'}>
+          <Image
+            className='bilderlabs'
+            src='/home/bilderlabs.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
+        <Link href={'/bilderdising'}>
+          <Image
+            className='bilderdising'
+            src='/home/bilderdising.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
       </div>
       <Image
-        src='/bg_home.jpg'
+        src='/bg_new.jpg'
         alt='treasure map'
         layout='fill'
         objectFit='cover'
-        objectPosition='center'
+        objectPosition='left'
         quality={100}
         priority
       />

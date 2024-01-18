@@ -14,12 +14,7 @@ const Bilderlabs: NextPage = () => {
       <Header />
       <main>
         <HeaderSection title={'BilderCrew'} />
-        <RollerText></RollerText>
-        <div className={'form-container'}>
-          <Form1 />
-          <Divider className={'separator'} />
-          <Form2 />
-        </div>
+
       </main>
     </div>
   )

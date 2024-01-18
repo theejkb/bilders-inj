@@ -5,11 +5,8 @@ export default function FormBuilderDox() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h3>Bilder DOX</h3>
-      <p>
-        You are a project and you want to build on the Injective blockchain and
-        wanting to offer a trust certificate?
-      </p>
+      <h3> You are a project and you want to build on the Injective blockchain and
+        wanting to offer a trust certificate?</h3>
       <label htmlFor='projet'>BilderDox is the service they need for that. </label>
       <input name="projet" type="text" placeholder="Votre projet" required />
       <input
