@@ -7,7 +7,7 @@ export default function JoinUs() {
         <h2>First step </h2>
         <div>
           <a className={'button-primary'} href={'https://injective.talis.art/collection/65934e5252dcad3bb5b05ef6'}>Become
-            a holder
+            a Holder
             <svg width='40' height='42' viewBox='0 0 200 162' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <g clipPath='url(#clip0_504_14)'>
                 <path
@@ -67,7 +67,7 @@ export default function JoinUs() {
       </div>
       <div className='container'>
         <h2>Second step </h2>
-        <a className={'button-primary'} href={'https://discord.gg/YAFxpN27kK'}> Get your holder role
+        <a className={'button-primary'} href={'https://discord.gg/YAFxpN27kK'}> Join us on Discord and verify
           <Image alt={'discord logo'} src={'/discord-icon-svgrepo-com.svg'} height={'40px'} width={'40px'}></Image></a>
       </div>
     </div>
