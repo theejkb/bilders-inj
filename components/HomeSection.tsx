@@ -1,13 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 
 export default function HomeSection() {
 
   return (
     <section className={'home-section'}>
       <div className='links'>
-
         <Image
           src='/home/poto.png'
           alt='link'
@@ -65,6 +63,17 @@ export default function HomeSection() {
           <Image
             className='bilderdising'
             src='/home/bilderdising.png'
+            alt='link'
+            layout='fill'
+            objectFit='contain'
+            objectPosition='center'
+            quality={100}
+          />
+        </Link>
+        <Link href={'https://flip.injbilder.xyz'} rel='noreferrer' target={'_blank'}>
+          <Image
+            className='bilderflip'
+            src='/home/bilderflip.png'
             alt='link'
             layout='fill'
             objectFit='contain'

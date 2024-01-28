@@ -147,6 +147,37 @@ h3{
   }
 }
 
+.bildercrew{
+  h2{
+    margin: 0;
+  }
+  .main-roller{
+    flex-direction: column;
+    gap: 25px;
+    .container{
+    gap: 50px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.button-primary{
+  padding: 15px;
+  display: flex;
+  background: #000000;
+  align-items: center;
+  justify-content: space-around;
+  height: 50px;
+  width: 250px;
+  border-radius: 15px;
+
+  &:hover{
+    transform: scale(1.1);
+    transition: .2s ease-out;
+  }
+}
+
 .links {
   z-index: 99;
   position: relative;
@@ -229,6 +260,20 @@ h3{
       transition: .2s ease-in;
     }
   }
+
+  span:nth-child(7) {
+    position: absolute !important;
+    top: 350px !important;
+    left: 0 !important;
+    max-width: 300px !important;
+    max-height: 70px !important;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: .2s ease-in;
+    }
+  }
 }
 
 .menu-container {
@@ -291,8 +336,18 @@ h3{
         animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
         animation-delay: 0.4s;
       }
+
+      &:nth-child(6) {
+        -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        animation-delay: 0.5s;
+      }
     }
   }
+}
+
+.soon{
+  margin-top: 40%;
 }
 
 .main-title {
@@ -471,6 +526,23 @@ h3{
   }
   72.5% {
     top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+
+    &.active {
+      flex-direction: column;
+      margin-top: 60px;
+      height: 95vh;
+
+      a {
+        height: 100%;
+      }
+    }
   }
 }
 

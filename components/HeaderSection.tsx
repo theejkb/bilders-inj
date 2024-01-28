@@ -71,6 +71,7 @@ export default function HeaderSection({ title }: IntroSectionProps) {
         <Link href={'/bilderdox'}>BilderDox</Link>
         <Link href={'/bilderlabs'}>BilderLabs</Link>
         <Link href={'/bilderdising'}>BilderDising</Link>
+        <Link href={'/bilderflip'}>Bilderflip</Link>
       </div>
     </>
   )

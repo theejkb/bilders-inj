@@ -2,16 +2,16 @@ import type { NextPage } from 'next'
 import Header from '../components/Header'
 import Metadata from '../components/Metadata'
 import HeaderSection from '../components/HeaderSection'
-import JoinUs from '../components/JoinUs'
+import CommingSoon from '../components/CommingSoon'
 
 const Bilderlabs: NextPage = () => {
   return (
-    <div className={'bildercrew'}>
+    <div>
       <Metadata />
       <Header />
       <main>
-        <HeaderSection title={'BilderCrew'} />
-        <JoinUs></JoinUs>
+        <HeaderSection title={'Bilderflip'}/>
+        <CommingSoon></CommingSoon>
       </main>
     </div>
   )

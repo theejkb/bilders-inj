@@ -3,17 +3,17 @@ import Head from 'next/head'
 export default function Metadata() {
   return (
     <Head>
-      <title>Treasure Hunt - Hodl Card</title>
-      <meta property="og:title" content="Treasure Hunt" />
+      <title>Injective Bilder</title>
+      <meta property="og:title" content="Injective Bilder" />
       <meta
         name="description"
-        content="Participate now in the Treasure Hunt event hosted by HODLcards"
+        content="Injective Bilder Official Website."
       />
       <meta
         property="og:description"
-        content="Participate now in the treasure hunt event hosted by HODLcards"
+        content="Injective Bilder Official Website."
       />
-      <meta property="og:image" content="/website_preview.png" />
+      <meta property="og:image" content="/bg_new.jpg" />
     </Head>
   )
 }

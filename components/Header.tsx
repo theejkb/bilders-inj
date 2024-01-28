@@ -20,7 +20,7 @@ export default function Header() {
           </span>
         </a>
         <a
-          href='https://dsc.gg/HODLcards'
+          href='https://discord.gg/cqxArJ9UD6'
           target='_blank'
           rel='noopener noreferrer'
         >

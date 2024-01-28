@@ -8,17 +8,17 @@ export default function FormBuilderDox() {
       <h3> You are a project and you want to build on the Injective blockchain and
         wanting to offer a trust certificate?</h3>
       <label htmlFor='projet'>BilderDox is the service they need for that. </label>
-      <input name="projet" type="text" placeholder="Votre projet" required />
+      <input name="projet" type="text" placeholder="Your project" required />
       <input
         name="twitter"
         type="text"
-        placeholder="Votre liens twitter"
+        placeholder="Twitter link"
         required
       />
       <input
         name="discord"
         type="text"
-        placeholder="Votre ID Discord"
+        placeholder="Discord ID"
         required
       />
       <p>
