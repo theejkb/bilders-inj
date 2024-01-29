@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function JoinUs() {
   return (
-    <div className='main-roller gradient-bg'>
+    <div className='main-roller gradient-bg bildercrew'>
       <div className='container'>
         <h2>First step </h2>
         <div>

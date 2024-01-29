@@ -55,7 +55,7 @@ a {
   }
 }
 
-h3{
+h3 {
   text-align: center;
   padding: 5% 10%;
 }
@@ -65,21 +65,25 @@ h3{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  .form-title{
+
+  .form-title {
     text-align: center;
     font-size: 23px;
     margin-bottom: 15px;
   }
+
   form {
     width: 45%;
     display: flex;
     flex-direction: column;
-    label{
+
+    label {
       font-size: 18px;
       margin-bottom: 5px;
       margin-top: 15px;
     }
-    input, textarea{
+
+    input, textarea {
       height: 50px;
       background: rgba(255, 255, 255, 0.03);
       color: rgba(255, 255, 255, 0.8) !important;
@@ -91,7 +95,8 @@ h3{
       border-width: 2px;
       border-style: solid;
       border-image: linear-gradient(to right, #00868b, darkorchid) 1;
-      &:hover{
+
+      &:hover {
         border-color: #c10eff !important;
         background: rgba(255, 255, 255, 0.1);
       }
@@ -103,23 +108,25 @@ h3{
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      input{
+
+      input {
         width: 48%;
       }
     }
 
-    .triple{
+    .triple {
       margin-top: 15px;
       margin-bottom: 15px;
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      input{
+
+      input {
         width: 30%;
       }
     }
 
-    button{
+    button {
       background: linear-gradient(to right, #00868b, darkorchid);
       color: #000;
       border-radius: 5px;
@@ -130,39 +137,44 @@ h3{
   }
 }
 
-.bildercrew{
-  .form-container{
+.bildercrew {
+  .form-container {
     justify-content: center;
-    form{
-      input{
+
+    form {
+      input {
         margin-top: 15px;
       }
-      p{
+
+      p {
         margin-top: 10px;
       }
-      button{
+
+      button {
         margin-top: 20px;
       }
     }
   }
 }
 
-.bildercrew{
-  h2{
+.bildercrew {
+  h2 {
     margin: 0;
   }
-  .main-roller{
+
+  .main-roller {
     flex-direction: column;
     gap: 25px;
-    .container{
-    gap: 50px;
+
+    .container {
+      gap: 50px;
       display: flex;
       align-items: center;
     }
   }
 }
 
-.button-primary{
+.button-primary {
   padding: 15px;
   display: flex;
   background: #000000;
@@ -172,7 +184,7 @@ h3{
   width: 250px;
   border-radius: 15px;
 
-  &:hover{
+  &:hover {
     transform: scale(1.1);
     transition: .2s ease-out;
   }
@@ -346,7 +358,7 @@ h3{
   }
 }
 
-.soon{
+.soon {
   margin-top: 40%;
 }
 
@@ -364,7 +376,8 @@ h3{
   z-index: 100;
 
   .builders-logo {
-    width: 150px;
+    width: 50px;
+    margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,11 +394,17 @@ h3{
   }
 
   .hamburger {
+    margin-right: 50px;
     position: relative;
     cursor: pointer;
     display: flex;
-    scale: 0.3;
+    top: 0;
     z-index: 999;
+    width: 50px;
+    height: 50px;
+    svg{
+      height: 50px!important
+    }
   }
 
   svg {
@@ -544,6 +563,24 @@ h3{
       }
     }
   }
+  .bildercrew {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 0px!important;
+    }
+  }
+  header{
+    font-size: 12px;
+    justify-content: flex-start!important;
+  }
+  .builders-logo{
+    margin-left: 10px!important;
+  }
+  .hamburger{
+    margin-right: 10px!important;
+  }
+
 }
 
 @keyframes gradient {
