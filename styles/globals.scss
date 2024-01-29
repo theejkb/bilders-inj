@@ -402,8 +402,9 @@ h3 {
     z-index: 999;
     width: 50px;
     height: 50px;
-    svg{
-      height: 50px!important
+
+    svg {
+      height: 50px !important
     }
   }
 
@@ -549,6 +550,18 @@ h3 {
 }
 
 @media screen and (max-width: 999px) {
+  .bildercrew .form-container {
+    h3 {
+      margin-top: 25px;
+    }
+  }
+  .form-container {
+    flex-direction: column !important;
+
+    form {
+      width: 100%;
+    }
+  }
   .menu-container {
     display: none;
     position: absolute;
@@ -567,18 +580,18 @@ h3 {
     .container {
       display: flex;
       flex-direction: column;
-      gap: 0px!important;
+      gap: 0px !important;
     }
   }
-  header{
+  header {
     font-size: 12px;
-    justify-content: flex-start!important;
+    justify-content: flex-start !important;
   }
-  .builders-logo{
-    margin-left: 10px!important;
+  .builders-logo {
+    margin-left: 10px !important;
   }
-  .hamburger{
-    margin-right: 10px!important;
+  .hamburger {
+    margin-right: 10px !important;
   }
 
 }
